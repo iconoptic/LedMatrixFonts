@@ -7,8 +7,4 @@ for i in led.alphabet:
     led.clear()
 """
 
-def plotPoint() {
-        x = randint(0,led.COLS-1)
-        y = randint(0,7)
-        
-}
+led.shStr("HAPPY THANKSGIVING")

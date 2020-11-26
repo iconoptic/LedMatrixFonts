@@ -111,13 +111,8 @@ for a in arr:
             elif c == '0': 
                 for x in range(4): outArr[a[0]-1][s-1].append(False)
 
-for s in outArr[65]:
-    for c in s:
-        if c == True:
-            print("1",end="")
-        else:
-            print("0",end="")
-    print()
-
-for a in arr:
-    if a[0] == 65: print(a)
+for a in outArr:
+    print(outArr.index(a))
+    for s in a:
+        print(s)
+print(outArr)
