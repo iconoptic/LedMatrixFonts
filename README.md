@@ -14,6 +14,10 @@ This repository contains scripts to decode .ttf files to bitmaps (using otf2bdf)
 
 ## Usage
 
-To decode a ttf file, run the script `font2bitmaps.sh`. This script accepts 0-1 arguments, enter the path to a ttf file.
+To decode a ttf file, run the script `font2bitmaps.sh`. This script accepts 0-1 arguments, enter the path to a ttf file. Default output is to STDOUT, redirect the output to a python source file.
+
+Import the source file to ledSquare.py and replace instances of 'arial.font' with '_your font name_.font'.
+
+Import ledSquare into test.py, or your preferred main program. Print a string to the led matrix by typing ledSquare.shStr("_your string_").
 
 
