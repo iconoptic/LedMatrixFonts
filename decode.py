@@ -111,6 +111,12 @@ for a in arr:
             elif c == '0': 
                 for x in range(4): outArr[a[0]-1][s-1].append(False)
 
+for l in outArr[115]:
+    for c in l:
+        if c: print(1,end="")
+        else: print(0,end="")
+    print()
+
 for a in outArr:
     print(outArr.index(a))
     for s in a:

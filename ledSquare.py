@@ -94,24 +94,18 @@ def shStr (inStr):
     clear()
     letters = []
     for i in inStr:
-        print(ord(i)-1)
-        for s in arial.font[ord(i)-1]:
-            print(s)
-        letters.append(arial.font[ord(i)-1][2:])
+        letters.append(arial.font[ord(i)-1][1:])
 
     out = []
     for i in range(8): out.append([])
     for i in range(len(letters)):
         for j in range(len(letters[i])):
             for k in range(len(letters[i][j])):
-                if i < 9: out[j].append(letters[i][j][k])
-    for i in out:
-        print(i)
-    out.remove([])
+                out[j].append(letters[i][j][k])
     for i in range(len(out[0])):
-        picture([out[0][i:COLS+i],out[1][i:COLS+i],out[2][i:COLS+i],out[3][i:COLS+i],out[4][i:COLS+i]], Color(255,255,255), -COLS, 8-len(out))
+        picture([out[0][i:COLS+i],out[1][i:COLS+i],out[2][i:COLS+i],out[3][i:COLS+i],out[4][i:COLS+i],out[5][i:COLS+i],out[6][i:COLS+i],out[7][i:COLS+i]], Color(255,255,255), -COLS, 0)
         if i == 0:
-            time.sleep(1)
+            time.sleep(0.5)
         time.sleep(0.1)
         clear()
 
